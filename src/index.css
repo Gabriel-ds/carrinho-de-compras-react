@@ -1,13 +1,88 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 16px;
 }
+
+main {
+  min-height: 40vh;
+  margin:  1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+ul {
+  max-width: 500px;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+li {
+  background-color: aliceblue;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+  /* background-color: aquamarine; */
+
+  display: flex;
+  /* align-items: center; */
+
+
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+img {
+  height: 100px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-info {
+  margin-left: 3rem;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-info p {
+  font-weight: bold;
+}
+
+.purchase-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.purchase-total{
+  gap: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  
+  /* max-width: 500px; */
+  background-color: antiquewhite;
+  padding: 5rem;
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 5px rgba(0.25, 0.25, 0.25, 0.25);
+}
+
