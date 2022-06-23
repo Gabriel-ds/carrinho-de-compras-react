@@ -1,77 +1,53 @@
-# Carrinho de Compras Simples - React JS
+### 🛒 Carrinho de Compras Simples - React JS
 Aplicação de um carrinho de compras que consome dados de uma API.
+
+Clique no link seguinte para acessar o sistema hospedado no Heroku:
+<a href="https://carrinho-de-compras-react.herokuapp.com/">https://carrinho-de-compras-react.herokuapp.com/</a>
+
 
 <img src="https://user-images.githubusercontent.com/71797335/175397216-dff25bfc-a5cb-489d-be45-b7341e12bd5a.png">
 
-# Getting Started with Create React App
+<hr>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse sistema simula a interação de uma aplicação Frontend com uma API de e-commerce, que fornece ao nosso Front os dados de produtos a serem adicionados ao carrinho.
 
-## Available Scripts
+Na aplicação podemos selecionar o tipo de dado JSON que vamos consumir na tela. Veja nas imagens abaixo as duas mudanças de busca que podemos selecinar no Frontend clicando no botão "Alterar dados do Servidor":
 
-In the project directory, you can run:
+<div style="display: display-flex">
+<img src="https://user-images.githubusercontent.com/71797335/175397216-dff25bfc-a5cb-489d-be45-b7341e12bd5a.png">
 
-### `npm start`
+<img src="https://user-images.githubusercontent.com/71797335/175397281-4795c36b-c880-4b52-bfc1-3481f1967bd9.png">
+ </div>
+ 
+ Abaixo da lista o sitema soma os valores de cada produto, se o valor total for maior que R$10,00 o sistema exibe a mensagem "Você possui frete grátis para a compra"
+ 
+ Ao clicar em "Finalizar Compra" o sistema exibe um modal com uma mensagem de sucesso.
+ 
+ <img src="https://user-images.githubusercontent.com/71797335/175397318-d663d581-2ac1-463a-ab6d-2668fb3651ec.png">
+ 
+ <hr>
+ 
+ ### 🛠 Tecnologias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React](https://pt-br.reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [SweetAlert](https://sweetalert.js.org/guides/)
 
-### `npm test`
+### 🎲 Rodando projeto localmente
+ ````
+# Clone este repositório
+$ git clone <https://github.com/Gabriel-ds/carrinho-de-compras-react.git>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd carrinho-de-compras
 
-### `npm run build`
+# Instale as dependências
+$ npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Execute a aplicação 
+$ npm run start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# carrinho-de-compras-react
-Aplicação de um carrinho de compras que consome dados de uma API 
