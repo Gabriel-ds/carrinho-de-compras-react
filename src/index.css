@@ -44,9 +44,11 @@ img {
 }
 
 button {
+  display: flex;
+  flex-direction: column;
   border: none;
   padding: 0 2rem;
-  height: 2rem;
+  height: 35px;
 
   display: flex;
   align-items: center;
@@ -148,3 +150,7 @@ button:hover {
   object-fit: cover;
 }
 
+.swal-back {
+  color: red;
+  background-color: #83563f;
+}

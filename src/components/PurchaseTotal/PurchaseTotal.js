@@ -1,4 +1,7 @@
+import Swal from 'sweetalert2'
+
 function PurchaseTotal({ getApi }) {
+
   let priceValues = [];
   getApi.items.map((p) => priceValues.push(p.price));
   const totalPrice =
@@ -6,6 +9,16 @@ function PurchaseTotal({ getApi }) {
       (acc, current) => parseFloat(acc) + parseFloat(current)
     ) / 100;
   console.log(priceValues);
+
+  const PurchaseAlert = () => {
+    console.log('hello')
+    Swal.fire({
+      title: "Compra efetuada! 👏",
+      text: "Parabéns! Você acabou de realizar a compra!",
+      icon: "success",
+      className: "swal-back"
+    })
+  }
 
   return (
     <div className="purchase-action">
@@ -21,7 +34,7 @@ function PurchaseTotal({ getApi }) {
         ""
       )}
 
-      <button className="btn-purchase">Finalizar compra</button>
+      <button onClick={() => PurchaseAlert()} className="btn-purchase" >Finalizar compra</button>
     </div>
   );
 }
