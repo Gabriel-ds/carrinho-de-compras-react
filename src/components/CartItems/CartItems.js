@@ -1,15 +1,18 @@
-import Item from "../Item/item"
+import Item from "../Item/item";
 
-import {moreTherTen} from "../../database/moreTherTen.js"
+function CartItems({getApi}) {
 
-function CartItems () {
-    return (
-        <main>
-            <ul>
-                {moreTherTen.items.map((item, index) => <Item img={item.imageUrl} name={item.name} price={item.price} />)}
-            </ul>
-        </main>
-    )
+  return (
+    <>
+      <main>
+        <ul>
+          {getApi.items.map((item, index) => (
+            <Item img={item.imageUrl} name={item.name} price={item.price} />
+          ))}
+        </ul>
+      </main>
+    </>
+  );
 }
 
-export default CartItems
+export default CartItems;

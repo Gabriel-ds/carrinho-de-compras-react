@@ -1,13 +1,11 @@
-import { moreTherTen } from "../../database/moreTherTen.js";
-
-function PurchaseTotal() {
-
+function PurchaseTotal({ getApi }) {
   let priceValues = [];
-  moreTherTen.items.map(p => priceValues.push(p.price));
-  const totalPrice = (priceValues.reduce((acc, current) => parseFloat(acc) + parseFloat(current))) / 100
-  console.log(priceValues)
-  console.log(totalPrice)
-
+  getApi.items.map((p) => priceValues.push(p.price));
+  const totalPrice =
+    priceValues.reduce(
+      (acc, current) => parseFloat(acc) + parseFloat(current)
+    ) / 100;
+  console.log(priceValues);
 
   return (
     <div className="purchase-action">
@@ -15,6 +13,14 @@ function PurchaseTotal() {
         <h3>Total</h3>
         <span>R${totalPrice}</span>
       </div>
+      {totalPrice > 10 ? (
+        <div>
+          <span>Você possui frete grátis para a compra!</span>
+        </div>
+      ) : (
+        ""
+      )}
+
       <button>Finalizar compra</button>
     </div>
   );
