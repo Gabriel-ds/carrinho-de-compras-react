@@ -1,11 +1,11 @@
-function Item() {
+function Item({img, name, price}) {
   return (
     <>
       <li>
-        <img src="http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000" alt="Imagem bom bom"></img>
+        <img src={img} alt="Imagem bom bom"></img>
         <div className="item-info">
-        <p>Nome da Trufa</p>
-        <span>R$20,00</span>
+        <p>{name}</p>
+        <span>R${price}</span>
         </div>
       </li>
     </>
