@@ -14,7 +14,7 @@ function ShoppingCart() {
     };
     return (
         <div className="shopping-cart">
-            <button onClick={() => ChangeApi()}>Alterar dados do Servidor</button>
+            <button onClick={() => ChangeApi()} className="btn-change">Alterar dados do Servidor</button>
             <h2 className="title">Meu carrinho</h2>
             <CartItems getApi={getApi} />
             <PurchaseTotal getApi={getApi} />

@@ -7,6 +7,10 @@
 
 body {
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cee1d8;
 }
 
 main {
@@ -16,7 +20,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 }
 
 ul {
@@ -29,12 +32,9 @@ ul {
 }
 
 li {
-  background-color: aliceblue;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-  /* background-color: aquamarine; */
-
+  background-color: #fda664;
   display: flex;
-  /* align-items: center; */
   border-radius: 0.75rem;
 }
 
@@ -43,7 +43,32 @@ img {
   padding: 0.50rem;
 }
 
+button {
+  border: none;
+  padding: 0 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 00.75rem;
+  padding: 2px;
+  cursor: pointer;
+
+  transition: 0.5s;
+  font-weight: bolder;
+  background-color: #cee1d8;
+  color: #83563f;
+}
+
+button:hover {
+  color: white;
+  background-color: #83563f;
+}
+
 .title {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +77,6 @@ img {
 .item-info {
   margin-left: 1rem;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   justify-content: center;
 }
@@ -66,6 +90,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .purchase-total{
@@ -76,14 +101,50 @@ img {
 }
 
 .shopping-cart {
-  
-  /* max-width: 500px; */
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
-  padding: 5rem;
+  align-items: center;
+  padding: 2rem;
   border-radius: 0.75rem;
+  box-shadow: 4px 4px 5px rgba(0.25, 0.25, 0.25, 0.25);
+  max-width: 500px;
+  background-color: #f6eee0;
+}
+
+.btn-change {
+  max-width: 200px;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+
+.btn-purchase {
+  padding: 20px;
+  background-color: #f04842;
+  color: white;
+}
+
+.btn-purchase:hover {
+  color: white;
+  background-color: #83563f;
+}
+
+
+.free-shipping {
+  color: red;
+  margin: 1rem;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 5px;
+  border-radius: 00.75rem;
   box-shadow: 4px 4px 5px rgba(0.25, 0.25, 0.25, 0.25);
 }
 
+.cropped1 {
+  width: 150px; /* width of container */
+  height: 100px; /* height of container */
+  object-fit: cover;
+}
 

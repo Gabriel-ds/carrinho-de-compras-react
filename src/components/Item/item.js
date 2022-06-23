@@ -2,10 +2,10 @@ function Item({img, name, price}) {
   return (
     <>
       <li>
-        <img src={img} alt="Imagem bom bom"></img>
+        <img className="cropped1" src={img} alt="Imagem bom bom"></img>
         <div className="item-info">
         <p>{name}</p>
-        <span>R${price}</span>
+        <span>R${(price / 100).toFixed(2)}</span>
         </div>
       </li>
     </>

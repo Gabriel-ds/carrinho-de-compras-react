@@ -14,14 +14,14 @@ function PurchaseTotal({ getApi }) {
         <span>R${totalPrice}</span>
       </div>
       {totalPrice > 10 ? (
-        <div>
+        <div className="free-shipping">
           <span>Você possui frete grátis para a compra!</span>
         </div>
       ) : (
         ""
       )}
 
-      <button>Finalizar compra</button>
+      <button className="btn-purchase">Finalizar compra</button>
     </div>
   );
 }
