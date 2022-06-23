@@ -1,3 +1,8 @@
+# Carrinho de Compras Simples - React JS
+Aplicação de um carrinho de compras que consome dados de uma API.
+
+<img src="https://user-images.githubusercontent.com/71797335/175397216-dff25bfc-a5cb-489d-be45-b7341e12bd5a.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
