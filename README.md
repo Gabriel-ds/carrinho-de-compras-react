@@ -41,7 +41,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 $ git clone <https://github.com/Gabriel-ds/carrinho-de-compras-react.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd carrinho-de-compras
+$ cd carrinho-de-compras-react
 
 # Instale as dependências
 $ npm install
